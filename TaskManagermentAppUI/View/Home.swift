@@ -60,6 +60,7 @@ struct Home: View {
                             }
                         }
                         .padding(.horizontal)
+                        TasksView()
                     }
                 } header: {
                     HeaderView()
@@ -67,6 +68,16 @@ struct Home: View {
             }
         }
     }
+    
+    //MARK: - Tasks View
+    @ViewBuilder
+    func TasksView() -> some View {
+        LazyVStack {
+            
+        }
+    }
+    
+    //MARK: - Sample Task
     
     //MARK: - Header
     @ViewBuilder
